@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+class Calculos
+{
+    private:
+        float numero1;
+        float numero2;
+    public:
+        void inicializar();
+        void suma();
+        void resta();
+        void multiplicacion();
+        void division();
+};
+
+void Calculos::inicializar()
+{
+    cout << "Ingrese el primer numero: ";
+    cin >> numero1;
+    cout << "Ingrese el segundo numero: ";
+    cin >> numero2;
+}
+void Calculos::suma()
+{
+    cout << "La suma de esos numeros es de: " << numero1 + numero2 << endl;
+}
+
+void Calculos::resta()
+{
+    cout << "La resta de esos numeros es de: " << numero1 - numero2 << endl;
+}
+
+void Calculos::multiplicacion()
+{
+    cout << "La multiplicacion de esos numeros es de: " << numero1 * numero2 << endl;
+}
+
+void Calculos::division()
+{
+    cout << "La division de esos numeros es de: " << numero1 / numero2 << endl;
+}
+
+int main()
+//realizado por Sansolini
+{
+    Calculos calculo;
+    calculo.inicializar();
+    calculo.suma();
+    calculo.resta();
+    calculo.multiplicacion();
+    calculo.division();
+    return 0;
+}
