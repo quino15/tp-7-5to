@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+class Calculos
+{
+    private:
+        float numero1;
+        float total;
+    public:
+        void inicializar();
+        void suma();
+};
+
+void Calculos::inicializar()
+{
+    while(numero1 != 0)
+    {
+        cout << "Ingrese el numero para hacer la sumatoria: ";
+        cin >> numero1;
+        cout << endl;
+        total = total + numero1;
+    }
+}
+void Calculos::suma()
+{
+    cout << "La suma de esos numeros es de: " << total;
+}
+
+int main()
+//realizado por Sansolini
+{
+    Calculos calculo;
+    calculo.inicializar();
+    calculo.suma();
+    return 0;
+}
