@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+class Persona
+{
+    private:
+        char nombre[40];
+        int edad;
+        float calificacion;
+    public:
+        void inicializar();
+        void imprimir();
+};
+
+void Persona::inicializar()
+{
+    cout <<"Ingrese nombre: ";
+    cin.getline(nombre,40);
+    cout <<"Ingrese edad: ";
+    cin >>edad;
+    cout << "Ingrese la calificacion final: ";
+    cin >> calificacion;
+}
+void Persona::imprimir()
+{
+    cout << "El nombre del alumno es: " << nombre << endl;
+    cout << "La edad del alumno es: " << edad << endl;
+    cout << "La calificacion final del alumno es: " << calificacion << endl;
+}
+int main()
+//realizado por Sansolini
+{
+    Persona persona1;
+    persona1.inicializar();
+    persona1.imprimir();
+    return 0;
+}
